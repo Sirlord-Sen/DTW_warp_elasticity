@@ -36,7 +36,7 @@ function [dtw_distances, warp_deviation, warp_elasticity] = calculate_warp_elast
     [S, T, C]  = size(subTcs);
     srate = 1/TR;
 
-    t = (0:1/srate:((TR*L)-1/srate))'; % Time vector
+    t = (0:1/srate:((TR*T)-1/srate))'; % Time vector
 
     % Initialization of outputs
     warp_deviation = zeros(S, T, C, C);
